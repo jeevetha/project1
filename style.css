@@ -29,6 +29,11 @@ is present in navbar class so we can't access it */
     cursor: pointer;
 }
 
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -56,11 +61,6 @@ is present in navbar class so we can't access it */
     border-radius: 8px;
 }*/
 
-.container{
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
 
 .hero__container{
     width: 100%;
@@ -96,25 +96,7 @@ is present in navbar class so we can't access it */
     justify-content: center;
 }
 
-.explore__menu__container{
-    position: relative;
-}
 
-.explore__menu__gradient__bg{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-image: linear-gradient(
-        to right,
-        #ff512f 0%,
-        #dd2476 51%,
-        #ff512f 100%
-    ) ;
-    z-index: -3;
-    transform: skewY(-5deg);
-}
 
 .food__menu__card{
     width: 100%;
@@ -196,11 +178,31 @@ is present in navbar class so we can't access it */
         justify-content: space-between;
         gap: 20px;
     }
+    .explore__menu__container{
+        position: relative;
+    }
+
     .explore__menu__lists{
         margin-top: 30px;
         display: flex;
         gap: 8px;
     }
+    .explore__menu__gradient__bg{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+            to right,
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%
+        ) ;
+        z-index: -3;
+        transform: skewY(-5deg);
+    }
+    
     #pizza__card{
         margin-top: -20px;
         margin-bottom: 30px;
