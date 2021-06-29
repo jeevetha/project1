@@ -82,13 +82,13 @@ is present in navbar class so we can't access it */
 
 .explore__menu__container{
     margin-top: 50px;
-    text-align: center;
 }
 
 .explore__menu__text{
     font-size: 30px;
     color: #1d3557;
     margin: 20px 0;
+    text-align: center;
 }
 
 .explore__menu__view__more{
@@ -131,6 +131,51 @@ is present in navbar class so we can't access it */
 .food__menu__card__description{
     padding: 20px;
 }
+
+.restaurants__description{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/*.restaurants__flex__row__one{
+    width: 100%;
+}
+
+.restaurants__flex__row__two{
+    width: 100%;
+}*/
+
+/*or*/
+.restaurants__flex__row__one,.restaurants__flex__row__two{
+    width: 100%;
+    display: flex;
+    gap:4px;
+}
+
+.restaurants__flex__row__one{
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+.restaurant__1__image,
+.restaurant__2__image,
+.restaurant__3__image,
+.restaurant__4__image{
+    width: 100%;
+    height: 100%;
+    border-radius:  7px; ;
+}
+
+.restaurant__1,.restaurant__4{
+    width: 100%;
+    height: 150px;
+}
+
+.restaurant__2,.restaurant__3{
+    height: 200px;
+    width: 120%;
+}
 @media (min-width: 768px)
 {
     .navbar{
@@ -160,6 +205,18 @@ is present in navbar class so we can't access it */
         margin-top: -20px;
         margin-bottom: 30px;
     }
+    .restaurants__description{
+        font-size: 40px;
+        width: 100%;
+    }
+    .restaurants__container{
+        display: flex;
+        align-items: center;
+    }
+    .restaurants__flex{
+        width: 100%;
+    }
+
 }
 
 @media (min-width: 1020px)
@@ -176,6 +233,9 @@ is present in navbar class so we can't access it */
     }
     .explore__menu__text{
         font-size: 50px;
+    }
+    .restaurants__container{
+        margin-top: 30px;
     }
 }
 
