@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box; /*To box model*/
+} /*to remove default styles from the browser*/
+
+/* Global*/
+body{
+    font-family: "Merriweather", sans-serif;
+    background-color: #ebf2ff;
+    overflow-x: hidden;   
+}
+
+/*this button__primary is used multiple times so 
+we remove or change nav__item to button primary 
+so that it can be used anywhere otherwise the nav__item 
+is present in navbar class so we can't access it */
+.button__primary{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    ) ;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__brand{
+    width: 100px;
+}
+
+.navbar__logo{
+    width: 100%; 
+}
+
+/*.nav__item{
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    ) ;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+}*/
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hero__container{
+    width: 100%;
+}
+
+.hero__image__container{
+    width: 100%;
+}
+
+.hero_image{
+    width: 100%;
+}
+
+@media (min-width: 768px)
+{
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 20px; /*top,botton and right,left*/
+    }
+    .navbar__brand{
+        width: 150px;
+    }
+    .button__primary{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .hero__container{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+}
+
+@media (min-width: 1020px)
+{
+    .container{
+        max-width: 1010%;
+    }
+    .hero__image__container{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1400px)
+{
+    
+}
