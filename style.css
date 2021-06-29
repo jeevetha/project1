@@ -80,14 +80,37 @@ is present in navbar class so we can't access it */
     margin: 20px 0; /*top,bottom and left,right*/
 }
 
+.explore__menu__container{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.explore__menu__text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+}
+
+.explore__menu__view__more{
+    display: flex;
+    justify-content: center;
+}
+
 .food__menu__card{
     width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
 .food__image{
     width: 100%;
+    border-radius: 8px 8px 0 0;
 }
 
+.food__menu__card__description{
+    padding: 20px;
+}
 @media (min-width: 768px)
 {
     .navbar{
