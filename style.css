@@ -25,7 +25,8 @@ is present in navbar class so we can't access it */
     color: white;
     padding: 12px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .navbar{
@@ -73,6 +74,20 @@ is present in navbar class so we can't access it */
     width: 100%;
 }
 
+.hero__text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0; /*top,bottom and left,right*/
+}
+
+.food__menu__card{
+    width: 100%;
+}
+
+.food__image{
+    width: 100%;
+}
+
 @media (min-width: 768px)
 {
     .navbar{
@@ -83,7 +98,7 @@ is present in navbar class so we can't access it */
         width: 150px;
     }
     .button__primary{
-        padding: 20px;
+        padding: 12px 20px;
         font-size: 20px;
     }
     .hero__container{
@@ -91,7 +106,7 @@ is present in navbar class so we can't access it */
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
-        gap: 10px;
+        gap: 20px;
     }
 
 }
@@ -99,15 +114,19 @@ is present in navbar class so we can't access it */
 @media (min-width: 1020px)
 {
     .container{
-        max-width: 1010%;
+        max-width: 900px;
     }
-    .hero__image__container{
-        width: 500px;
-        height: 500px;
+    .hero__text{
+        font-size: 50px;
     }
 }
 
 @media (min-width: 1400px)
 {
-    
+    .container{
+        max-width: 1250px;
+    }
+    .hero__image__container{
+        width: 100%;
+    }   
 }
